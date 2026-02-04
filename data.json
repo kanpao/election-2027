@@ -1,0 +1,198 @@
+{
+  "showWinnerEffects": "ON",
+  "lastUpdate": 1770187135585,
+  "candidates": [
+    {
+      "district": "นายก อบจ.",
+      "zone": "-",
+      "number": 1,
+      "name": "นายรักชาติ รักยิ่ง",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "นายก อบจ.",
+      "zone": "-",
+      "number": 2,
+      "name": "นายรักจริง รักจัง",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 1,
+      "number": 1,
+      "name": "นายทดสอบ รักชาติ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 1,
+      "number": 2,
+      "name": "นายทดสอบ รักดี",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 2,
+      "number": 3,
+      "name": "นายชัยยศ พรหมจารีย์พินาศ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 2,
+      "number": 4,
+      "name": "นายชาติชาญ เล่นเอาขำ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10001
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 3,
+      "number": 5,
+      "name": "นายหล่อ พิลึก",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 8888
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 3,
+      "number": 6,
+      "name": "นายการหาญ โดนอม",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 4,
+      "number": 7,
+      "name": "นายมนศักดิ์ กางมุ้งคอย",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 4,
+      "number": 8,
+      "name": "นางสร้อยเหม็น ฟางน้อย",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 8888
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 5,
+      "number": 9,
+      "name": "นางลำเทียน จ้องผสมพันธุ์",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 9999
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 5,
+      "number": 10,
+      "name": "นายหวังนที จู๋ยืนยง",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 6,
+      "number": 11,
+      "name": "นายอธิป จู๋กระจ่าง",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 8888
+    },
+    {
+      "district": "เมืองกาญจนบุรี",
+      "zone": 6,
+      "number": 12,
+      "name": "นายบรรจง หนึ่งในยุทธจักร",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 1,
+      "number": 1,
+      "name": "นางสาวเพลินใจ รักดี",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 10000
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 1,
+      "number": 2,
+      "name": "นางสาวเพลินดี มีตำนาน",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 8888
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 2,
+      "number": 3,
+      "name": "นายสมศักดิ์ หวังกระแทกคาง",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 2,
+      "number": 4,
+      "name": "นายบุญพอ มีเท",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 3,
+      "number": 5,
+      "name": "นายแสง บาดตาสาว",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 8888
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 3,
+      "number": 6,
+      "name": "นางเกิดใหม่ รวยจริงนะ",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 9999
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 4,
+      "number": 7,
+      "name": "นางสาวจรัสวิภา กล้านอนหงาย",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 10000
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 4,
+      "number": 8,
+      "name": "นางสายใจ เกาะมหาสนุก",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 8888
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 5,
+      "number": 9,
+      "name": "นายสมศักดิ์ หวังกระแทกคาง",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "ท่ามะกา",
+      "zone": 5,
+      "number": 10,
+      "name": "นายหวังนที จู๋ยืนยง",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    }
+  ]
+}
