@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770259788166,
+  "lastUpdate": 1770259846895,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -262,7 +262,7 @@
       "district": "ทองผาภูมิ",
       "zone": 1,
       "number": 19,
-      "name": "",
+      "name": "พล.อ.การุณ เก่งระดมยิง",
       "image": "",
       "score": 10000
     },
@@ -270,7 +270,7 @@
       "district": "ทองผาภูมิ",
       "zone": 1,
       "number": 20,
-      "name": "",
+      "name": "ลำเทียน จ้องผสมพันธุ์",
       "image": "",
       "score": 8888
     },
@@ -278,7 +278,7 @@
       "district": "ทองผาภูมิ",
       "zone": 2,
       "number": 21,
-      "name": "",
+      "name": "มนศักดิ์ กางมุ้งคอย",
       "image": "",
       "score": 9999
     },
