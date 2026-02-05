@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770260387441,
+  "lastUpdate": 1770260447803,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -299,31 +299,15 @@
       "score": 0
     },
     {
-      "district": "",
+      "district": "ด่านมะขามเตี้ย",
       "zone": 2,
-      "number": "",
-      "name": "",
-      "image": "",
-      "score": 0
-    },
-    {
-      "district": "ศรีสวัสดิ์",
-      "zone": 1,
       "number": 24,
       "name": "นายภาคภูมิ ด้วนรู้ที่",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 0
     },
     {
-      "district": "",
-      "zone": 2,
-      "number": "",
-      "name": "",
-      "image": "",
-      "score": 0
-    },
-    {
-      "district": "สังขละบุรี",
+      "district": "ศรีสวัสดิ์",
       "zone": 1,
       "number": 25,
       "name": "นายหรูหรา ออมตอง",
@@ -331,31 +315,15 @@
       "score": 0
     },
     {
-      "district": "",
-      "zone": "",
-      "number": "",
-      "name": "",
-      "image": "",
-      "score": 0
-    },
-    {
-      "district": "หนองปรือ",
-      "zone": 1,
+      "district": "ศรีสวัสดิ์",
+      "zone": 2,
       "number": 26,
       "name": "นางสาววรุณนาโศรก จันทรคดี",
       "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
       "score": 0
     },
     {
-      "district": "",
-      "zone": "",
-      "number": "",
-      "name": "",
-      "image": "",
-      "score": 0
-    },
-    {
-      "district": "ห้วยกระเจา",
+      "district": "สังขละบุรี",
       "zone": 1,
       "number": 27,
       "name": "นางสาวหรินาท ปรปักษ์เป็นจุล",
@@ -363,9 +331,41 @@
       "score": 0
     },
     {
-      "district": "",
-      "zone": "",
-      "number": "",
+      "district": "สังขละบุรี",
+      "zone": 2,
+      "number": 28,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "หนองปรือ",
+      "zone": 1,
+      "number": 29,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "หนองปรือ",
+      "zone": 2,
+      "number": 30,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ห้วยกระเจา",
+      "zone": 1,
+      "number": 31,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ห้วยกระเจา",
+      "zone": 2,
+      "number": 32,
       "name": "",
       "image": "",
       "score": 0
