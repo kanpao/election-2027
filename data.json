@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770273167685,
+  "lastUpdate": 1770273230290,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -436,17 +436,9 @@
     },
     {
       "district": "พนมทวน",
-      "zone": 2,
+      "zone": 1,
       "number": 52,
       "name": "นายซาคุรางิ สแลมดั้ง",
-      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 10000
-    },
-    {
-      "district": "พนมทวน",
-      "zone": 1,
-      "number": 53,
-      "name": "นายชินจัง ชินโนะสึเกะ",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 10000
     },
@@ -459,12 +451,20 @@
       "score": 9999
     },
     {
-      "district": "",
-      "zone": "",
-      "number": "",
-      "name": "",
-      "image": "",
-      "score": 0
+      "district": "พนมทวน",
+      "zone": 2,
+      "number": 53,
+      "name": "นายชินจัง ชินโนะสึเกะ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "พนมทวน",
+      "zone": 2,
+      "number": 54,
+      "name": "นางสาวอุซางิ เซเลอร์มูน",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 9999
     },
     {
       "district": "พนมทวน",
