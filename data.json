@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770259547232,
+  "lastUpdate": 1770259606658,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -204,7 +204,7 @@
     },
     {
       "district": "ท่าม่วง",
-      "zone": 6,
+      "zone": 1,
       "number": "",
       "name": "กันภัย สูญสิ้นภัย",
       "image": "",
@@ -212,7 +212,7 @@
     },
     {
       "district": "ท่าม่วง",
-      "zone": 7,
+      "zone": 2,
       "number": "",
       "name": "อูโน่ หลาวทอง",
       "image": "",
@@ -220,7 +220,39 @@
     },
     {
       "district": "ท่าม่วง",
-      "zone": 7,
+      "zone": 2,
+      "number": "",
+      "name": "ศักดิพันธ์ ชอบนอนหงาย",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ท่าม่วง",
+      "zone": 3,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ท่าม่วง",
+      "zone": 3,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ท่าม่วง",
+      "zone": 4,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ท่าม่วง",
+      "zone": 4,
       "number": "",
       "name": "",
       "image": "",
