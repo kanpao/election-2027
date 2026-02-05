@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770259907423,
+  "lastUpdate": 1770259967062,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -270,23 +270,23 @@
       "district": "ทองผาภูมิ",
       "zone": 1,
       "number": 20,
-      "name": "ลำเทียน จ้องผสมพันธุ์",
-      "image": "",
+      "name": "นางสาวชะรอยจุติมา จากสวรรรค์",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
       "score": 8888
     },
     {
       "district": "ทองผาภูมิ",
       "zone": 2,
       "number": 21,
-      "name": "นางสาวชะรอยจุติมา จากสวรรรค์",
-      "image": "",
+      "name": "นางสาวแลคโตเย่น นมกล่อง",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
       "score": 9999
     },
     {
       "district": "ทองผาภูมิ",
       "zone": 2,
       "number": 22,
-      "name": "แลคโตเย่น",
+      "name": "",
       "image": "",
       "score": 10000
     }
