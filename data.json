@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770273289389,
+  "lastUpdate": 1770273347115,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -461,14 +461,6 @@
     {
       "district": "พนมทวน",
       "zone": 2,
-      "number": 54,
-      "name": "นางสาวอุซางิ เซเลอร์มูน",
-      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
-      "score": 9999
-    },
-    {
-      "district": "พนมทวน",
-      "zone": 2,
       "number": 56,
       "name": "นายเคนตะ วิงแมน",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
@@ -485,18 +477,18 @@
     {
       "district": "เลาขวัญ",
       "zone": 1,
-      "number": 58,
-      "name": "นายลูฟี่ วันพีซ",
-      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 10000
-    },
-    {
-      "district": "เลาขวัญ",
-      "zone": 2,
       "number": 59,
       "name": "นายเร็ตสึ นักซิ่งสายฟ้า let's & go",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 10001
+    },
+    {
+      "district": "เลาขวัญ",
+      "zone": 2,
+      "number": 58,
+      "name": "นายลูฟี่ วันพีซ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
     },
     {
       "district": "เลาขวัญ",
