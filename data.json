@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770259606658,
+  "lastUpdate": 1770259666924,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -197,64 +197,64 @@
     {
       "district": "ท่าม่วง",
       "zone": 1,
-      "number": "",
+      "number": 11,
       "name": "ณรงค์ นัดใช้ปืน",
-      "image": "",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 0
     },
     {
       "district": "ท่าม่วง",
       "zone": 1,
-      "number": "",
+      "number": 12,
       "name": "กันภัย สูญสิ้นภัย",
-      "image": "",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 0
     },
     {
       "district": "ท่าม่วง",
       "zone": 2,
-      "number": "",
+      "number": 13,
       "name": "อูโน่ หลาวทอง",
-      "image": "",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 0
     },
     {
       "district": "ท่าม่วง",
       "zone": 2,
-      "number": "",
+      "number": 14,
       "name": "ศักดิพันธ์ ชอบนอนหงาย",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 0
+    },
+    {
+      "district": "ท่าม่วง",
+      "zone": 3,
+      "number": 15,
+      "name": "กนกกร เม่งเวหา",
       "image": "",
       "score": 0
     },
     {
       "district": "ท่าม่วง",
       "zone": 3,
-      "number": "",
-      "name": "",
-      "image": "",
-      "score": 0
-    },
-    {
-      "district": "ท่าม่วง",
-      "zone": 3,
-      "number": "",
-      "name": "",
+      "number": 16,
+      "name": "รรรรรร (อ่านว่า ระ-รัน-รอน)",
       "image": "",
       "score": 0
     },
     {
       "district": "ท่าม่วง",
       "zone": 4,
-      "number": "",
-      "name": "",
+      "number": 17,
+      "name": "ท่านฮ่องเต้ สมลุนาวัน",
       "image": "",
       "score": 0
     },
     {
       "district": "ท่าม่วง",
       "zone": 4,
-      "number": "",
-      "name": "",
+      "number": 18,
+      "name": "นารัตน์ พัดลม",
       "image": "",
       "score": 0
     }
