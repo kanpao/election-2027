@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770259728364,
+  "lastUpdate": 1770259788166,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -200,7 +200,7 @@
       "number": 11,
       "name": "นายณรงค์ นัดใช้ปืน",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 0
+      "score": 8888
     },
     {
       "district": "ท่าม่วง",
@@ -208,7 +208,7 @@
       "number": 12,
       "name": "นายกันภัย สูญสิ้นภัย",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 0
+      "score": 9999
     },
     {
       "district": "ท่าม่วง",
@@ -216,7 +216,7 @@
       "number": 13,
       "name": "นายอูโน่ หลาวทอง",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 0
+      "score": 10000
     },
     {
       "district": "ท่าม่วง",
@@ -224,23 +224,23 @@
       "number": 14,
       "name": "นายศักดิพันธ์ ชอบนอนหงาย",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 0
+      "score": 8888
     },
     {
       "district": "ท่าม่วง",
       "zone": 3,
       "number": 15,
       "name": "นางกนกกร เม่งเวหา",
-      "image": "",
-      "score": 0
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 9999
     },
     {
       "district": "ท่าม่วง",
       "zone": 3,
       "number": 16,
       "name": "นางสาวรรรรรร (อ่านว่า ระ-รัน-รอน)",
-      "image": "",
-      "score": 0
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 10000
     },
     {
       "district": "ท่าม่วง",
@@ -248,15 +248,47 @@
       "number": 17,
       "name": "นายท่านฮ่องเต้ สมลุนาวัน",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 0
+      "score": 8888
     },
     {
       "district": "ท่าม่วง",
       "zone": 4,
       "number": 18,
       "name": "นางนาวนารัตน์ พัดลม",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 9999
+    },
+    {
+      "district": "ทองผาภูมิ",
+      "zone": 1,
+      "number": 19,
+      "name": "",
       "image": "",
-      "score": 0
+      "score": 10000
+    },
+    {
+      "district": "ทองผาภูมิ",
+      "zone": 1,
+      "number": 20,
+      "name": "",
+      "image": "",
+      "score": 8888
+    },
+    {
+      "district": "ทองผาภูมิ",
+      "zone": 2,
+      "number": 21,
+      "name": "",
+      "image": "",
+      "score": 9999
+    },
+    {
+      "district": "ทองผาภูมิ",
+      "zone": 2,
+      "number": 22,
+      "name": "",
+      "image": "",
+      "score": 10000
     }
   ]
 }
