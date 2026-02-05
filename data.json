@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770261047081,
+  "lastUpdate": 1770261107475,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -432,6 +432,38 @@
       "number": 40,
       "name": "นายหินชนวน อโศก",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 0
+    },
+    {
+      "district": "พนมทวน",
+      "zone": 1,
+      "number": 41,
+      "name": "จันมี โถรองมูล",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "พนมทวน",
+      "zone": 1,
+      "number": 42,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "พนมทวน",
+      "zone": 2,
+      "number": 43,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "พนมทวน",
+      "zone": 2,
+      "number": 44,
+      "name": "",
+      "image": "",
       "score": 0
     }
   ]
