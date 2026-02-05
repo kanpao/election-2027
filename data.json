@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770260028020,
+  "lastUpdate": 1770260086626,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -294,8 +294,16 @@
       "district": "ด่านมะขามเตี้ย",
       "zone": 1,
       "number": 23,
-      "name": "ด่านมะขามเตี้ย",
-      "image": "",
+      "name": "นายไพรัตน์ หม้อน้ำร้อน",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 0
+    },
+    {
+      "district": "ศรีสวัสดิ์",
+      "zone": 1,
+      "number": 24,
+      "name": "นายภาคภูมิ ด้วนรู้ที่",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 0
     }
   ]
