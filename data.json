@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770260687389,
+  "lastUpdate": 1770260746911,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -300,7 +300,7 @@
     },
     {
       "district": "ด่านมะขามเตี้ย",
-      "zone": 2,
+      "zone": 1,
       "number": 24,
       "name": "นายภาคภูมิ ด้วนรู้ที่",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
@@ -316,7 +316,7 @@
     },
     {
       "district": "ศรีสวัสดิ์",
-      "zone": 2,
+      "zone": 1,
       "number": 26,
       "name": "นางสาววรุณนาโศรก จันทรคดี",
       "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
@@ -332,7 +332,7 @@
     },
     {
       "district": "สังขละบุรี",
-      "zone": 2,
+      "zone": 1,
       "number": 28,
       "name": "นางสาววรต อกระโทก",
       "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
@@ -348,7 +348,7 @@
     },
     {
       "district": "หนองปรือ",
-      "zone": 2,
+      "zone": 1,
       "number": 30,
       "name": "นายนิธินัย เหินเวหา",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
@@ -364,7 +364,7 @@
     },
     {
       "district": "ห้วยกระเจา",
-      "zone": 2,
+      "zone": 1,
       "number": 32,
       "name": "นายสงคราม ชนะราวี ",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
@@ -372,7 +372,7 @@
     },
     {
       "district": "ไทรโยค",
-      "zone": "",
+      "zone": 1,
       "number": "",
       "name": "",
       "image": "",
@@ -380,7 +380,23 @@
     },
     {
       "district": "ไทรโยค",
-      "zone": "",
+      "zone": 1,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ไทรโยค",
+      "zone": 2,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ไทรโยค",
+      "zone": 2,
       "number": "",
       "name": "",
       "image": "",
