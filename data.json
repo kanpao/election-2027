@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770259486862,
+  "lastUpdate": 1770259547232,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -195,15 +195,15 @@
       "score": 10000
     },
     {
-      "district": "",
-      "zone": 6,
+      "district": "ท่าม่วง",
+      "zone": 1,
       "number": "",
       "name": "ณรงค์ นัดใช้ปืน",
       "image": "",
       "score": 0
     },
     {
-      "district": "",
+      "district": "ท่าม่วง",
       "zone": 6,
       "number": "",
       "name": "กันภัย สูญสิ้นภัย",
@@ -211,7 +211,7 @@
       "score": 0
     },
     {
-      "district": "",
+      "district": "ท่าม่วง",
       "zone": 7,
       "number": "",
       "name": "อูโน่ หลาวทอง",
@@ -219,7 +219,7 @@
       "score": 0
     },
     {
-      "district": "",
+      "district": "ท่าม่วง",
       "zone": 7,
       "number": "",
       "name": "",
