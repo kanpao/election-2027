@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770260207034,
+  "lastUpdate": 1770260266836,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -320,6 +320,30 @@
       "number": 26,
       "name": "นางสาววรุณนาโศรก จันทรคดี",
       "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 0
+    },
+    {
+      "district": "ห้วยกระเจา",
+      "zone": 1,
+      "number": 27,
+      "name": "นางสาวหรินาท ปรปักษ์เป็นจุล",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
+      "score": 0
+    },
+    {
+      "district": "ไทรโยค",
+      "zone": "",
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "ไทรโยค",
+      "zone": "",
+      "number": "",
+      "name": "",
+      "image": "",
       "score": 0
     }
   ]
