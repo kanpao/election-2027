@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770260807517,
+  "lastUpdate": 1770260867007,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -375,30 +375,62 @@
       "zone": 1,
       "number": 33,
       "name": "นางติ๊บ บุญนำ",
-      "image": "",
+      "image": "https://lh3.googleusercontent.com/d/1yNKYXEIzKX3GdQmshCHfKfGBDIOQtFtC",
       "score": 0
     },
     {
       "district": "ไทรโยค",
       "zone": 1,
       "number": 34,
-      "name": "แคน อัครฮาก",
-      "image": "",
+      "name": "นายแคน อัครฮาก",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 0
     },
     {
       "district": "ไทรโยค",
       "zone": 2,
       "number": 35,
-      "name": "อ๊อด ไชโย",
-      "image": "",
+      "name": "นายอ๊อด ไชโย",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 0
     },
     {
       "district": "ไทรโยค",
       "zone": 2,
       "number": 36,
-      "name": "บารมี สมาธิปัญญา",
+      "name": "นายบารมี สมาธิปัญญา",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 0
+    },
+    {
+      "district": "บ่อพลอย",
+      "zone": 1,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "บ่อพลอย",
+      "zone": 1,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "บ่อพลอย",
+      "zone": 2,
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "บ่อพลอย",
+      "zone": 2,
+      "number": "",
+      "name": "",
       "image": "",
       "score": 0
     }
