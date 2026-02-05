@@ -1,6 +1,6 @@
 {
   "showWinnerEffects": "ON",
-  "lastUpdate": 1770261347689,
+  "lastUpdate": 1770261407599,
   "candidates": [
     {
       "district": "นายก อบจ.",
@@ -462,6 +462,38 @@
       "district": "พนมทวน",
       "zone": 2,
       "number": 44,
+      "name": "นายโดเรมอน แมวสีฟ้า",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "เลาขวัญ",
+      "zone": 1,
+      "number": 45,
+      "name": "นายโงกุน พลังคลื่อนเต่า",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "เลาขวัญ",
+      "zone": 1,
+      "number": 46,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "เลาขวัญ",
+      "zone": 2,
+      "number": 47,
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "เลาขวัญ",
+      "zone": 2,
+      "number": 48,
       "name": "",
       "image": "",
       "score": 0
