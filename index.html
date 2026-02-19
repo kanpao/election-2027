@@ -115,11 +115,10 @@
   </footer>
 
   <script>
-    // --- เปลี่ยน URL เป็นที่อยู่ไฟล์ข้อมูลของคุณบน GitHub/Cloudflare ---
     const DATA_URL = 'data.json'; 
     const baseMenuItems = ["สรุปภาพรวม", "นายก อบจ.", "เมืองกาญจนบุรี", "ท่ามะกา", "ท่าม่วง", "ทองผาภูมิ", "ด่านมะขามเตี้ย", "ศรีสวัสดิ์", "สังขละบุรี", "หนองปรือ", "ห้วยกระเจา", "ไทรโยค", "บ่อพลอย", "พนมทวน", "เลาขวัญ"];
-    let activeMenuItems = [...baseMenuItems]; // เมนูที่จะแสดงจริงหลังจากเช็คสวิตช์แล้ว
-    let currentTab = ""; // ปล่อยว่างไว้ก่อน เพื่อตั้งค่าอัตโนมัติตอนโหลด
+    let activeMenuItems = [...baseMenuItems]; 
+    let currentTab = ""; 
     let electionData = null;
     let hasFiredConfetti = false;
 
@@ -132,14 +131,12 @@
         if (data) {
           electionData = data;
           
-          // ตรวจสอบการซ่อน/แสดง เมนูจาก Sheets
           activeMenuItems = baseMenuItems.filter(item => {
             if (item === "สรุปภาพรวม" && electionData.showSummaryTab === "OFF") return false;
             if (item === "นายก อบจ." && electionData.showMayorTab === "OFF") return false;
             return true;
           });
 
-          // ถ้ายูสเซอร์เข้าเว็บมาครั้งแรก หรือแท็บปัจจุบันถูกซ่อนไป ให้เด้งไปแท็บแรกสุดที่มีอยู่
           if (!currentTab || !activeMenuItems.includes(currentTab)) {
             currentTab = activeMenuItems[0];
           }
@@ -174,6 +171,22 @@
       list.innerHTML = '';
       renderNavs();
 
+      // 1. คำนวณคะแนนรวมของ นายก อบจ. จากทุกอำเภอ
+      const globalMayorScores = {};
+      candidates.forEach(c => {
+        // เช็คว่าถ้าพิมพ์ในช่องเขตว่า นายก อบจ.
+        if (c.zone && c.zone.toString().includes("นายก")) {
+          const key = c.number + "_" + c.name;
+          if (!globalMayorScores[key]) {
+            globalMayorScores[key] = { ...c, score: 0, district: "นายก อบจ." };
+          }
+          globalMayorScores[key].score += parseInt(c.score) || 0;
+        }
+      });
+      // เรียงลำดับคะแนนรวมนายกจากมากไปน้อย
+      const mayorList = Object.values(globalMayorScores).sort((a,b) => b.score - a.score);
+
+      // --- หน้าสรุปภาพรวม ---
       if (currentTab === "สรุปภาพรวม") {
         if (showWinnerEffects === 'ON') {
            title.innerHTML = '<span class="trophy-glow">🏆</span><span class="text-yellow-300">สรุปคะแนนสูงสุด</span> (อย่างไม่เป็นทางการ)';
@@ -183,11 +196,20 @@
            hasFiredConfetti = false;
         }
         
+        // ก. แสดงผู้ชนะ นายก อบจ. ภาพรวม (ไม่แสดงรายอำเภอ)
+        if (mayorList.length > 0 && showMayorTab !== "OFF") {
+           const distHeader = document.createElement('div');
+           distHeader.className = "text-2xl md:text-4xl font-extrabold text-yellow-300 mt-10 mb-6 border-l-[6px] border-yellow-300 pl-4 drop-shadow-md";
+           distHeader.innerText = "นายกองค์การบริหารส่วนจังหวัด (รวมทุกอำเภอ)";
+           list.appendChild(distHeader);
+           // ส่ง rank=1 เข้าไปเพื่อแสดงเอฟเฟกต์ผู้ชนะ
+           list.appendChild(createCard(mayorList[0], 1, mayorList[0].score, true, showWinnerEffects));
+        }
+
+        // ข. แสดงผู้ชนะ ส.อบจ. รายอำเภอ
         const allZones = {};
         candidates.forEach(c => {
-          // หากปิดการแสดงผลนายก ให้ข้ามข้อมูลนายกในหน้าสรุปภาพรวมไปด้วย
-          if (c.district === "นายก อบจ." && showMayorTab === "OFF") return;
-
+          if (c.zone && c.zone.toString().includes("นายก")) return; // ข้ามนายกไปเพราะแสดงภาพรวมแล้ว
           const key = c.district + '|' + c.zone; 
           if (!allZones[key]) allZones[key] = [];
           allZones[key].push(c);
@@ -205,14 +227,12 @@
           }
         });
 
-        // เรียงลำดับเขตตาม Array หลัก (baseMenuItems)
         const sortedDistricts = Object.keys(summaryByDistrict).sort((a,b) => baseMenuItems.indexOf(a) - baseMenuItems.indexOf(b));
 
         sortedDistricts.forEach(dist => {
-           let headerText = dist === "นายก อบจ." ? "นายกองค์การบริหารส่วนจังหวัด" : `อ.${dist}`;
            const distHeader = document.createElement('div');
-           distHeader.className = "text-2xl md:text-4xl font-extrabold text-yellow-300 mt-10 mb-6 border-l-[6px] border-yellow-300 pl-4 drop-shadow-md";
-           distHeader.innerText = headerText;
+           distHeader.className = "text-2xl md:text-4xl font-extrabold text-white mt-10 mb-6 border-l-[6px] border-white pl-4 drop-shadow-md opacity-90";
+           distHeader.innerText = `อ.${dist}`;
            list.appendChild(distHeader);
 
            const winners = summaryByDistrict[dist].sort((a,b) => parseInt(a.zone||0) - parseInt(b.zone||0));
@@ -221,32 +241,50 @@
            });
         });
 
+      // --- หน้านายก อบจ. ---
+      } else if (currentTab === "นายก อบจ.") {
+        hasFiredConfetti = false;
+        title.innerText = "ผลคะแนนรวม นายก อบจ.กาญจนบุรี (นับรวมทุกอำเภอ)";
+        const max = mayorList.length > 0 ? mayorList[0].score : 1;
+        mayorList.forEach((c, i) => list.appendChild(createCard(c, i+1, max, false, showWinnerEffects)));
+
+      // --- หน้าแต่ละอำเภอ ---
       } else {
         hasFiredConfetti = false;
-        if (currentTab === "นายก อบจ.") {
-            title.innerText = "ผลการเลือกตั้ง นายกองค์การบริหารส่วนจังหวัดกาญจนบุรี";
-            const cList = candidates.filter(c => c.district === "นายก อบจ.").sort((a,b) => b.score - a.score);
-            const max = cList.length > 0 ? cList[0].score : 1;
-            cList.forEach((c, i) => list.appendChild(createCard(c, i+1, max, false, showWinnerEffects)));
-        } else {
-            title.innerText = `เขตอำเภอ${currentTab}`;
-            const distCandidates = candidates.filter(c => c.district === currentTab);
-            const zones = {};
-            distCandidates.forEach(c => { const z = c.zone || "ทั่วไป"; if(!zones[z]) zones[z] = []; zones[z].push(c); });
-            const sortedZones = Object.keys(zones).sort((a,b) => parseInt(a) - parseInt(b));
+        title.innerText = `ผลการเลือกตั้ง เขตอำเภอ${currentTab}`;
+        const distCandidates = candidates.filter(c => c.district === currentTab);
+        
+        // ก. ดึงข้อมูล นายก อบจ. ประจำอำเภอนี้มาแสดงก่อน (ถ้ามี)
+        const distMayors = distCandidates.filter(c => c.zone && c.zone.toString().includes("นายก")).sort((a,b) => b.score - a.score);
+        if (distMayors.length > 0 && showMayorTab !== "OFF") {
+           const mayorHeader = document.createElement('div');
+           mayorHeader.className = "text-2xl md:text-4xl font-extrabold text-yellow-300 mt-10 mb-6 border-l-[6px] border-yellow-300 pl-4 drop-shadow-md";
+           mayorHeader.innerText = `คะแนน นายก อบจ. (เฉพาะอำเภอ${currentTab})`;
+           list.appendChild(mayorHeader);
 
-            sortedZones.forEach(z => {
-               const zoneHeader = document.createElement('div');
-               zoneHeader.className = "text-2xl md:text-4xl font-extrabold text-yellow-300 mt-10 mb-6 border-l-[6px] border-yellow-300 pl-4 drop-shadow-md";
-               zoneHeader.innerText = `เขต ${z}`;
-               list.appendChild(zoneHeader);
-
-               const cList = zones[z].sort((a,b) => b.score - a.score);
-               const max = cList.length > 0 ? cList[0].score : 1;
-               cList.forEach((c, i) => list.appendChild(createCard(c, i+1, max, false, showWinnerEffects)));
-            });
-            if (distCandidates.length === 0) list.innerHTML = `<div class="text-center text-white/70 py-10 border border-dashed border-white/30 rounded-xl">ยังไม่มีข้อมูลในเขตนื้</div>`;
+           const maxMayor = distMayors[0].score;
+           // ใส่ rank เพื่อเรียงลำดับคนที่คะแนนมากกว่าไว้บน และแสดงมงกุฎให้คนชนะในเขต
+           distMayors.forEach((c, i) => list.appendChild(createCard(c, i+1, maxMayor, false, showWinnerEffects)));
         }
+
+        // ข. ดึงข้อมูล ส.อบจ. ของอำเภอนี้มาแสดงต่อ
+        const councilCands = distCandidates.filter(c => !(c.zone && c.zone.toString().includes("นายก")));
+        const zones = {};
+        councilCands.forEach(c => { const z = c.zone || "ทั่วไป"; if(!zones[z]) zones[z] = []; zones[z].push(c); });
+        const sortedZones = Object.keys(zones).sort((a,b) => parseInt(a) - parseInt(b));
+
+        sortedZones.forEach(z => {
+           const zoneHeader = document.createElement('div');
+           zoneHeader.className = "text-2xl md:text-4xl font-extrabold text-white mt-10 mb-6 border-l-[6px] border-blue-400 pl-4 drop-shadow-md";
+           zoneHeader.innerText = `ส.อบจ. เขต ${z}`;
+           list.appendChild(zoneHeader);
+
+           const cList = zones[z].sort((a,b) => b.score - a.score);
+           const max = cList.length > 0 ? cList[0].score : 1;
+           cList.forEach((c, i) => list.appendChild(createCard(c, i+1, max, false, showWinnerEffects)));
+        });
+
+        if (distCandidates.length === 0) list.innerHTML = `<div class="text-center text-white/70 py-10 border border-dashed border-white/30 rounded-xl">ยังไม่มีข้อมูลในเขตนี้</div>`;
       }
     }
 
@@ -255,7 +293,6 @@
       const mobile = document.getElementById('mobile-nav-list');
       desktop.innerHTML = ''; mobile.innerHTML = '';
 
-      // วนลูปสร้างเมนูเฉพาะตัวที่ไม่ได้ถูกซ่อน (activeMenuItems)
       activeMenuItems.forEach(item => {
         const active = currentTab === item;
         const dBtn = document.createElement('button');
@@ -284,7 +321,10 @@
 
       let districtLabel = "";
       if (isSum) {
-         districtLabel = (c.district === "นายก อบจ.") ? "นายก อบจ.กาญจนบุรี" : `เขต ${c.zone}`; 
+         // ถ้าระบุว่าเป็นนายกในหน้าสรุป ให้แสดงป้ายชื่อชัดเจน
+         districtLabel = (c.district === "นายก อบจ.") ? "ผู้สมัครนายก อบจ." : `เขต ${c.zone}`; 
+      } else if (c.district === "นายก อบจ." || (c.zone && c.zone.toString().includes("นายก"))) {
+         districtLabel = "ผู้สมัครนายก อบจ.";
       }
 
       const mobileName = c.name.replace(' ', '<br class="md:hidden"> ');
@@ -303,7 +343,7 @@
           <div class="absolute -bottom-1 -right-1 w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center font-black z-10 ${rank === 1 ? 'badge-rank-1' : 'bg-slate-200 text-slate-600 border-2 border-white shadow-sm'} text-sm md:text-base">${c.number}</div>
         </div>
         <div class="flex-1 min-w-0 z-10 relative mt-1">
-          ${isSum ? `<div class="text-base md:text-lg text-blue-600 font-extrabold uppercase mb-1 tracking-wider">${districtLabel}</div>` : ''}
+          ${districtLabel ? `<div class="text-base md:text-lg text-blue-600 font-extrabold uppercase mb-1 tracking-wider">${districtLabel}</div>` : ''}
           <div class="text-xl md:text-2xl font-black leading-tight ${rank === 1 ? 'text-slate-900' : 'text-slate-700'}">
             ${mobileName} ${trophy}
           </div>
@@ -320,7 +360,6 @@
       return div;
     }
 
-    // ตั้งเวลาโหลดข้อมูลใหม่ทุก 30 วินาที
     setInterval(loadData, 30000);
     window.onload = loadData;
   </script>
