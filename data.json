@@ -2,7 +2,7 @@
   "showWinnerEffects": "OFF",
   "showSummaryTab": "ON",
   "showMayorTab": "ON",
-  "lastUpdate": 1771605651266,
+  "lastUpdate": 1771605710524,
   "candidates": [
     {
       "district": "เมืองกาญจนบุรี",
@@ -35,6 +35,54 @@
       "name": "นายชาติชาญ เล่นเอาขำ",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
       "score": 9999
+    },
+    {
+      "district": "ท่าม่วง",
+      "zone": "นายก อบจ.",
+      "number": 1,
+      "name": "นายชัยยศ พรหมจารีย์พินาศ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "ท่าม่วง",
+      "zone": "นายก อบจ.",
+      "number": 2,
+      "name": "นายชาติชาญ เล่นเอาขำ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "",
+      "zone": "",
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "",
+      "zone": "",
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "",
+      "zone": "",
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
+    },
+    {
+      "district": "",
+      "zone": "",
+      "number": "",
+      "name": "",
+      "image": "",
+      "score": 0
     },
     {
       "district": "เมืองกาญจนบุรี",
