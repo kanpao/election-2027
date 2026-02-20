@@ -88,9 +88,17 @@
         </div>
       </div>
       <nav class="desktop-nav flex-1 px-2"></nav>
-      <button onclick="toggleMobileMenu()" class="mobile-nav-toggle p-2 bg-blue-600 rounded-lg text-white shadow-md shrink-0">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
-      </button>
+      
+      <div class="flex items-center gap-3 shrink-0">
+        <div id="live-badge" class="hidden items-center gap-1.5 bg-red-600 text-white px-2 py-1 md:px-3 md:py-1 rounded-md shadow-md animate-pulse">
+          <div class="w-2 h-2 bg-white rounded-full"></div>
+          <span class="text-[10px] md:text-xs font-black tracking-widest">LIVE</span>
+        </div>
+        
+        <button onclick="toggleMobileMenu()" class="mobile-nav-toggle p-2 bg-blue-600 rounded-lg text-white shadow-md shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -121,7 +129,7 @@
     let currentTab = ""; 
     let electionData = null;
     let hasFiredConfetti = false;
-    let lastWinnerEffects = null; // เพิ่มตัวแปรเช็คสถานะ G2 ล่าสุด
+    let lastWinnerEffects = null; 
 
     function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
 
@@ -169,23 +177,31 @@
       const { candidates, showWinnerEffects, showMayorTab } = electionData;
       const list = document.getElementById('content-list');
       const title = document.getElementById('section-title');
+      const liveBadge = document.getElementById('live-badge'); // อ้างอิงโลโก้ LIVE
+
       list.innerHTML = '';
       renderNavs();
 
-      // ตรวจสอบว่า G2 เพิ่งถูกเปลี่ยนจาก OFF เป็น ON หรือไม่ (ถ้าระบบโหลดใหม่แล้วพบว่าเปิด ให้ยิงพลุทันที)
+      // จัดการแสดงผลป้าย LIVE (ตรงข้ามกับ G2)
+      if (showWinnerEffects === 'ON') {
+          liveBadge.classList.add('hidden');
+          liveBadge.classList.remove('flex');
+      } else {
+          liveBadge.classList.remove('hidden');
+          liveBadge.classList.add('flex');
+      }
+
       if (lastWinnerEffects !== null && lastWinnerEffects !== showWinnerEffects && showWinnerEffects === 'ON') {
           hasFiredConfetti = false; 
       }
       lastWinnerEffects = showWinnerEffects;
 
-      // สั่งยิงพลุ ถ้าเงื่อนไขเป็น ON
       if (showWinnerEffects === 'ON') {
           launchFireworks();
       } else {
-          hasFiredConfetti = false; // ถ้าปิดอยู่ ให้เตรียมพร้อมสำหรับเปิดครั้งถัดไป
+          hasFiredConfetti = false; 
       }
 
-      // 1. คำนวณคะแนนรวมของ นายก อบจ. จากทุกอำเภอ
       const globalMayorScores = {};
       candidates.forEach(c => {
         if (c.zone && c.zone.toString().includes("นายก")) {
@@ -311,7 +327,7 @@
         dBtn.innerText = item;
         dBtn.onclick = () => { 
             currentTab = item; 
-            if (item === "สรุปภาพรวม") hasFiredConfetti = false; // รีเซ็ตเพื่อบังคับยิงพลุเวลากลับมาหน้าแรก
+            if (item === "สรุปภาพรวม") hasFiredConfetti = false; 
             render(); 
         };
         desktop.appendChild(dBtn);
@@ -321,7 +337,7 @@
         mBtn.innerText = item;
         mBtn.onclick = () => { 
             currentTab = item; 
-            if (item === "สรุปภาพรวม") hasFiredConfetti = false; // รีเซ็ตเพื่อบังคับยิงพลุเวลากลับมาหน้าแรก
+            if (item === "สรุปภาพรวม") hasFiredConfetti = false; 
             toggleMobileMenu(); 
             render(); 
         };
@@ -333,7 +349,6 @@
       const div = document.createElement('div');
       const pct = max > 0 ? (c.score / max) * 100 : 0;
       
-      // ปรับให้การ์ดอันดับ 1 แสดงเอฟเฟกต์ผู้ชนะในทุกหน้า ถ้า G2 เป็น ON
       const useFullEffect = (rank === 1 && winnerStatus === 'ON');
 
       const crown = useFullEffect ? '<div class="absolute -top-12 left-6 text-5xl bounce-anim">👑</div>' : '';
