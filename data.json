@@ -2,7 +2,7 @@
   "showWinnerEffects": "OFF",
   "showSummaryTab": "ON",
   "showMayorTab": "ON",
-  "lastUpdate": 1771605891167,
+  "lastUpdate": 1771605949339,
   "candidates": [
     {
       "district": "เมืองกาญจนบุรี",
@@ -165,7 +165,7 @@
       "score": 9999
     },
     {
-      "district": "",
+      "district": "บ่อพลอย",
       "zone": "นายก อบจ.",
       "number": 1,
       "name": "นายชัยยศ พรหมจารีย์พินาศ",
@@ -173,7 +173,7 @@
       "score": 10000
     },
     {
-      "district": "",
+      "district": "บ่อพลอย",
       "zone": "นายก อบจ.",
       "number": 2,
       "name": "นายชาติชาญ เล่นเอาขำ",
@@ -181,7 +181,7 @@
       "score": 9999
     },
     {
-      "district": "",
+      "district": "บ่อพลอย",
       "zone": "นายก อบจ.",
       "number": 1,
       "name": "นายชัยยศ พรหมจารีย์พินาศ",
@@ -189,7 +189,7 @@
       "score": 10000
     },
     {
-      "district": "",
+      "district": "บ่อพลอย",
       "zone": "นายก อบจ.",
       "number": 2,
       "name": "นายชาติชาญ เล่นเอาขำ",
@@ -197,7 +197,7 @@
       "score": 9999
     },
     {
-      "district": "",
+      "district": "พนมทวน",
       "zone": "นายก อบจ.",
       "number": 1,
       "name": "นายชัยยศ พรหมจารีย์พินาศ",
@@ -205,7 +205,23 @@
       "score": 10000
     },
     {
-      "district": "",
+      "district": "พนมทวน",
+      "zone": "นายก อบจ.",
+      "number": 2,
+      "name": "นายชาติชาญ เล่นเอาขำ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "เลาขวัญ",
+      "zone": "นายก อบจ.",
+      "number": 1,
+      "name": "นายชัยยศ พรหมจารีย์พินาศ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "เลาขวัญ",
       "zone": "นายก อบจ.",
       "number": 2,
       "name": "นายชาติชาญ เล่นเอาขำ",
