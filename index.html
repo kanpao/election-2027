@@ -138,6 +138,11 @@
         if (data) {
           electionData = data;
           
+          // ดึงข้อความจาก G5 มาแสดงผลที่หัวเว็บ
+          if (electionData.headerTitle) {
+            document.getElementById('main-header-title').innerHTML = electionData.headerTitle;
+          }
+          
           activeMenuItems = baseMenuItems.filter(item => {
             if (item === "สรุปภาพรวม" && electionData.showSummaryTab === "OFF") return false;
             if (item === "นายก อบจ." && electionData.showMayorTab === "OFF") return false;
