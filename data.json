@@ -2,7 +2,7 @@
   "showWinnerEffects": "OFF",
   "showSummaryTab": "ON",
   "showMayorTab": "ON",
-  "lastUpdate": 1771605828434,
+  "lastUpdate": 1771605891167,
   "candidates": [
     {
       "district": "เมืองกาญจนบุรี",
@@ -85,7 +85,7 @@
       "score": 9999
     },
     {
-      "district": "",
+      "district": "ศรีสวัสดิ์",
       "zone": "นายก อบจ.",
       "number": 1,
       "name": "นายชัยยศ พรหมจารีย์พินาศ",
@@ -93,7 +93,71 @@
       "score": 10000
     },
     {
-      "district": "",
+      "district": "ศรีสวัสดิ์",
+      "zone": "นายก อบจ.",
+      "number": 2,
+      "name": "นายชาติชาญ เล่นเอาขำ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "สังขละบุรี",
+      "zone": "นายก อบจ.",
+      "number": 1,
+      "name": "นายชัยยศ พรหมจารีย์พินาศ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "สังขละบุรี",
+      "zone": "นายก อบจ.",
+      "number": 2,
+      "name": "นายชาติชาญ เล่นเอาขำ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "หนองปรือ",
+      "zone": "นายก อบจ.",
+      "number": 1,
+      "name": "นายชัยยศ พรหมจารีย์พินาศ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "หนองปรือ",
+      "zone": "นายก อบจ.",
+      "number": 2,
+      "name": "นายชาติชาญ เล่นเอาขำ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "ห้วยกระเจา",
+      "zone": "นายก อบจ.",
+      "number": 1,
+      "name": "นายชัยยศ พรหมจารีย์พินาศ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "ห้วยกระเจา",
+      "zone": "นายก อบจ.",
+      "number": 2,
+      "name": "นายชาติชาญ เล่นเอาขำ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 9999
+    },
+    {
+      "district": "ไทรโยค",
+      "zone": "นายก อบจ.",
+      "number": 1,
+      "name": "นายชัยยศ พรหมจารีย์พินาศ",
+      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
+      "score": 10000
+    },
+    {
+      "district": "ไทรโยค",
       "zone": "นายก อบจ.",
       "number": 2,
       "name": "นายชาติชาญ เล่นเอาขำ",
