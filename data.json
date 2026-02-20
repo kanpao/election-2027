@@ -3,7 +3,7 @@
   "showSummaryTab": "ON",
   "showMayorTab": "ON",
   "headerTitle": "เลือกตั้งนายก อบจ.กาญจนบุรี <span class=\"text-blue-600\">2570</span>",
-  "lastUpdate": 1771607568946,
+  "lastUpdate": 1771607633176,
   "candidates": [
     {
       "district": "เมืองกาญจนบุรี",
@@ -159,22 +159,6 @@
     },
     {
       "district": "ไทรโยค",
-      "zone": "นายก อบจ.",
-      "number": 2,
-      "name": "นายชาติชาญ เล่นเอาขำ",
-      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 9999
-    },
-    {
-      "district": "บ่อพลอย",
-      "zone": "นายก อบจ.",
-      "number": 1,
-      "name": "นายชัยยศ พรหมจารีย์พินาศ",
-      "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "score": 10000
-    },
-    {
-      "district": "บ่อพลอย",
       "zone": "นายก อบจ.",
       "number": 2,
       "name": "นายชาติชาญ เล่นเอาขำ",
