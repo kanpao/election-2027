@@ -1,8 +1,8 @@
 {
   "showWinnerEffects": "OFF",
-  "showSummaryTab": "OFF",
-  "showMayorTab": "OFF",
-  "lastUpdate": 1771601989041,
+  "showSummaryTab": "ON",
+  "showMayorTab": "ON",
+  "lastUpdate": 1771602053112,
   "candidates": [
     {
       "district": "เมืองกาญจนบุรี",
