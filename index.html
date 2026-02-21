@@ -203,7 +203,6 @@
           hasFiredConfetti = false; 
       }
 
-      // คำนวณคะแนนรวมของ นายก อบจ. ภาพรวม
       const globalMayorScores = {};
       candidates.forEach(c => {
         if (c.zone && c.zone.toString().includes("นายก")) {
@@ -215,7 +214,7 @@
         }
       });
       const mayorList = Object.values(globalMayorScores).sort((a,b) => b.score - a.score);
-      const globalMayorTotalScore = mayorList.reduce((sum, c) => sum + parseInt(c.score || 0), 0); // รวมคะแนนผู้สมัครนายกทุกคน
+      const globalMayorTotalScore = mayorList.reduce((sum, c) => sum + parseInt(c.score || 0), 0); 
 
       // --- หน้าสรุปภาพรวม ---
       if (currentTab === "สรุปภาพรวม") {
@@ -225,7 +224,6 @@
            title.innerHTML = '<span class="text-yellow-300">🏆 สรุปคะแนนสูงสุด</span> (อย่างไม่เป็นทางการ)';
         }
         
-        // ก. ผู้ชนะนายก ภาพรวม
         if (mayorList.length > 0 && showMayorTab !== "OFF") {
            const distHeader = document.createElement('div');
            distHeader.className = "text-2xl md:text-4xl font-extrabold text-yellow-300 mt-10 mb-6 border-l-[6px] border-yellow-300 pl-4 drop-shadow-md";
@@ -234,7 +232,6 @@
            list.appendChild(createCard(mayorList[0], 1, globalMayorTotalScore, true, showWinnerEffects));
         }
 
-        // ข. ผู้ชนะ ส.อบจ. แต่ละเขต
         const allZones = {};
         candidates.forEach(c => {
           if (c.zone && c.zone.toString().includes("นายก")) return; 
@@ -246,11 +243,11 @@
         const summaryByDistrict = {};
         Object.keys(allZones).forEach(key => {
           const cList = allZones[key];
-          const zoneTotalScore = cList.reduce((sum, c) => sum + parseInt(c.score || 0), 0); // รวมคะแนนเฉพาะเขตนั้นๆ
+          const zoneTotalScore = cList.reduce((sum, c) => sum + parseInt(c.score || 0), 0); 
           cList.sort((a,b) => b.score - a.score);
           if(cList.length > 0) {
             const winner = cList[0];
-            winner._zoneTotalScore = zoneTotalScore; // ฝากค่าผลรวมไว้ในตัวแปรชั่วคราว
+            winner._zoneTotalScore = zoneTotalScore; 
             const dist = winner.district;
             if(!summaryByDistrict[dist]) summaryByDistrict[dist] = [];
             summaryByDistrict[dist].push(winner);
@@ -290,7 +287,6 @@
         
         const distCandidates = candidates.filter(c => c.district === currentTab);
         
-        // ก. นายกเฉพาะอำเภอ
         const distMayors = distCandidates.filter(c => c.zone && c.zone.toString().includes("นายก")).sort((a,b) => b.score - a.score);
         if (distMayors.length > 0 && showMayorTab !== "OFF") {
            const mayorHeader = document.createElement('div');
@@ -302,7 +298,6 @@
            distMayors.forEach((c, i) => list.appendChild(createCard(c, i+1, distMayorTotalScore, false, showWinnerEffects)));
         }
 
-        // ข. ส.อบจ. แต่ละเขตในอำเภอ
         const councilCands = distCandidates.filter(c => !(c.zone && c.zone.toString().includes("นายก")));
         const zones = {};
         councilCands.forEach(c => { const z = c.zone || "ทั่วไป"; if(!zones[z]) zones[z] = []; zones[z].push(c); });
@@ -353,19 +348,33 @@
       });
     }
 
-    // เปลี่ยนพารามิเตอร์ max เป็น totalScore เพื่อคำนวณเปอเซ็นต์จากคะแนนรวมทั้งหมดในเขต
     function createCard(c, rank, totalScore, isSum, winnerStatus) {
       const div = document.createElement('div');
-      
-      // คำนวณเปอร์เซ็นต์
       const pct = totalScore > 0 ? (c.score / totalScore) * 100 : 0;
-      const pctText = pct.toFixed(2) + "%"; // แปลงเป็นทศนิยม 2 ตำแหน่ง
-
+      const pctText = pct.toFixed(2) + "%"; 
       const useFullEffect = (rank === 1 && winnerStatus === 'ON');
 
       const crown = useFullEffect ? '<div class="absolute -top-12 left-6 text-5xl bounce-anim">👑</div>' : '';
       const trophy = useFullEffect ? '<span class="ml-1 bounce-anim text-3xl solid-gold-trophy align-middle">🏆</span>' : '';
       const winnerText = useFullEffect ? '<p class="text-sm md:text-lg text-yellow-600 font-bold animate-pulse mt-1 drop-shadow-sm leading-tight">🏅 ผู้ชนะคะแนนเลือกตั้งอย่างไม่เป็นทางการ</p>' : '';
+
+      // --- ส่วนจัดการสีตามพรรค (Custom Colors) ---
+      // 1. สีขอบรูป Avatar (ใช้ border-[3px] ให้เส้นหนาขึ้นเพื่อให้เห็นสีชัดเจน)
+      let avatarStyle = "";
+      let avatarClass = "border-[3px]"; 
+      
+      if (c.color) {
+          avatarStyle = `border-color: ${c.color};`;
+          if (useFullEffect) avatarStyle += ` box-shadow: 0 0 15px ${c.color};`; // ถ้าชนะให้มีแสงเรืองแสงสีพรรค
+      } else {
+          // ถ้าไม่มีสีพรรค ให้ใช้สีพื้นฐาน (สีทองถ้าชนะ, สีเทาถ้าปกติ)
+          avatarClass += useFullEffect ? " border-yellow-400 shadow-md" : " border-slate-300";
+      }
+
+      // 2. สีหลอดคะแนน Progress bar
+      const barStyle = c.color 
+          ? `width:${pct}%; background-color: ${c.color};` 
+          : `width:${pct}%; background-image: linear-gradient(to right, #2563eb, #22d3ee);`;
 
       let districtLabel = "";
       if (isSum) {
@@ -381,13 +390,13 @@
         ${useFullEffect ? '<div class="shimmer-wrapper"></div>' : ''}
         ${crown}
         <div class="relative shrink-0 z-10">
-          <div class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-slate-100 border-2 ${useFullEffect ? 'border-yellow-400 shadow-md' : 'border-slate-300'} overflow-hidden flex items-center justify-center">
+          <div class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-slate-100 ${avatarClass} overflow-hidden flex items-center justify-center relative z-20" style="${avatarStyle}">
             ${(c.image && c.image.toString().startsWith('http')) 
               ? `<img src="${c.image}" class="w-full h-full object-cover">` 
               : `<span class="text-4xl font-black text-slate-400">${c.name.charAt(0)}</span>`
             }
           </div>
-          <div class="absolute -bottom-1 -right-1 w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center font-black z-10 ${rank === 1 ? 'badge-rank-1' : 'bg-slate-200 text-slate-600 border-2 border-white shadow-sm'} text-sm md:text-base">${c.number}</div>
+          <div class="absolute -bottom-1 -right-1 w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center font-black z-30 ${rank === 1 ? 'badge-rank-1' : 'bg-slate-200 text-slate-600 border-2 border-white shadow-sm'} text-sm md:text-base">${c.number}</div>
         </div>
         <div class="flex-1 min-w-0 z-10 relative mt-1">
           ${districtLabel ? `<div class="text-base md:text-lg text-blue-600 font-extrabold uppercase mb-1 tracking-wider">${districtLabel}</div>` : ''}
@@ -396,7 +405,7 @@
           </div>
           ${winnerText}
           <div class="w-full bg-slate-200 h-3 md:h-4 rounded-full mt-3 overflow-hidden shadow-inner">
-            <div class="h-full bg-gradient-to-r from-blue-600 to-cyan-400 transition-all duration-1000" style="width:${pct}%"></div>
+            <div class="h-full transition-all duration-1000" style="${barStyle}"></div>
           </div>
         </div>
         <div class="text-right shrink-0 z-10 pl-2">
