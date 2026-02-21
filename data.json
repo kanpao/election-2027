@@ -3,7 +3,7 @@
   "showSummaryTab": "ON",
   "showMayorTab": "ON",
   "headerTitle": "เลือกตั้งนายก อบจ.กาญจนบุรี <span class=\"text-blue-600\">2570</span>",
-  "lastUpdate": 1771687846832,
+  "lastUpdate": 1771687907772,
   "candidates": [
     {
       "district": "เมืองกาญจนบุรี",
@@ -245,7 +245,7 @@
       "number": 1,
       "name": "นายหล่อ พิลึก",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "color": "",
+      "color": "green",
       "score": 10001
     },
     {
@@ -254,7 +254,7 @@
       "number": 2,
       "name": "นายการหาญ โดนอม",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "color": "",
+      "color": "#f97316",
       "score": 9999
     },
     {
