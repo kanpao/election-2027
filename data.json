@@ -3,7 +3,7 @@
   "showSummaryTab": "ON",
   "showMayorTab": "ON",
   "headerTitle": "เลือกตั้งนายก อบจ.กาญจนบุรี <span class=\"text-blue-600\">2570</span>",
-  "lastUpdate": 1771687667951,
+  "lastUpdate": 1771687727387,
   "candidates": [
     {
       "district": "เมืองกาญจนบุรี",
@@ -20,7 +20,7 @@
       "number": 2,
       "name": "นายชาติชาญ เล่นเอาขำ",
       "image": "https://lh3.googleusercontent.com/d/1Jl0FKsEhN5mhU3Z7Bheyz1p8v7qXW-2k",
-      "color": "",
+      "color": "red",
       "score": 9999
     },
     {
